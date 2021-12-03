@@ -1,0 +1,16 @@
+{
+  "trailingComma": "all",
+  "singleQuote": false,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "semi": false,
+  "bracketSameLine": false,
+  "overrides": [
+    {
+      "files": "**/*.html",
+      "options": {
+        "printWidth": 300
+      }
+    }
+  ]
+}
