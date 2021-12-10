@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/chavitaRocha/assets/favicon.4f6d2498.svg" />
@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/chavitaRocha/assets/index.42fe4937.js"></script>
-    <link rel="stylesheet" href="/chavitaRocha/assets/index.ada3411d.css">
+    <link rel="stylesheet" href="/chavitaRocha/assets/index.58d73fa1.css">
   </head>
   <body>
     <!-- header -->
-    <header class="header header--main">
+    <header class="header header--main sticky bg-white/90 backdrop-blur-xl top-0 z-20">
       <div class="container container--header">
         <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
           <!-- <img src="./favicon.svg" class="w-7 h-auto" alt="Chavita" srcset="" /> -->
           <span class="ml-3 text-xl flex rounded px-3 py-2 text-gray-600">Chavita<span class="text-primary opacity-80">.Dev</span></span>
         </a>
         <nav class="hidden md:ml-auto md:flex flex-wrap items-center text-base justify-center">
-          <a href="#about" class="mr-5 font-medium hover:text-gray-900">About me</a>
-          <a href="#projects" class="mr-5 hover:text-gray-900">Experience</a>
+          <a href="#about" class="mr-5 hover:text-gray-900">About me</a>
+          <a href="#experience" class="mr-5 hover:text-gray-900">Experience</a>
           <a href="#contact" class="mr-5 hover:text-gray-900">Contact</a>
         </nav>
       </div>
     </header>
-    <main class="main">
-      <section class="text-gray-600 hero">
+    <main class="main mb-36">
+      <section class="text-gray-600 hero scroll-mt-16" id="about">
         <div class="container container--hero">
           <div class="lg:max-w-3xl lg:mx-auto flex items-center flex-col">
             <img src="/chavitaRocha/assets/profile.cb991ee6.png" alt="Chavita" srcset="" class="w-[200px] h-[200px] border-4 border-primary shadow-lg p-1 object-cover object-top mx-auto rounded-full" />
@@ -42,7 +42,7 @@
           </div>
         </div>
       </section>
-      <section class="text-gray-600 body-font">
+      <section class="text-gray-600 body-font scroll-mt-14 lg:scroll-mb-28 z-0" id="experience">
         <div class="container px-5 pb-16 pt-0 mx-auto flex flex-wrap lg:max-w-screen-xl">
           <h1 class="text-3xl my-10">Experience</h1>
           <div class="flex flex-wrap w-full">
@@ -177,17 +177,16 @@
       </section>
     </main>
     <footer>
-      <div class="group w-[90%] fixed bottom-8 left-[50%] translate-x-[-50%] p-1 rounded-lg flex justify-around bg-gray-100 hover:bg-gray-200 z-10 md:hidden">
-        <button type="button" class="flex focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded-md focus:outline-none focus-visible:ring-offset-gray-100">
-          <span x-show="true" class="p-3 rounded-md flex items-center text-sm font-medium bg-white shadow-sm ring-1 ring-black ring-opacity-5" :class="activeTab === 'preview' ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5' : ''">
+      <div class="group fixed w-full bottom-0 left-[50%] translate-x-[-50%] p-1 rounded-lg flex justify-around bg-gray-50 drop-shadow-2xl hover:bg-gray-200 z-10 md:hidden">
+        <a href="#about" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium">
+          <span x-show="true" class="p-3 rounded-md flex items-center text-sm font-medium">
             <i class="fas fa-user mr-2 text-primary"></i>
-            <span class="sr-only not-sr-only text-gray-900" :class="activeTab === 'preview' ? 'text-gray-900' : 'text-gray-600 group-hover:text-gray-900'">About me</span>
+            <span class="sr-only not-sr-only text-gray-900">About me</span>
           </span>
-        </button>
-        <button
-          x-ref="code"
-          type="button"
-          class="ml-0.5 p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
+        </a>
+        <a
+          href="#experience"
+          class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
           :class="activeTab === 'code' ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5' : ''"
           @click="activeTab = 'code'"
           tabindex="-1"
@@ -197,11 +196,10 @@
         >
           <i class="fas fa-folder mr-2"></i>
           <span class="sr-only not-sr-only text-gray-600 group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : 'text-gray-600 group-hover:text-gray-900'">Experience</span>
-        </button>
-        <button
-          x-ref="code"
-          type="button"
-          class="ml-0.5 p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
+        </a>
+        <a
+          href="#contact"
+          class="ml-0.5 p-1.5 mr-3 min-w-fit lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
           :class="activeTab === 'code' ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5' : ''"
           @click="activeTab = 'code'"
           tabindex="-1"
@@ -211,7 +209,7 @@
         >
           <i class="fas fa-address-card mr-2"></i>
           <span class="sr-only not-sr-only text-gray-600 group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : 'text-gray-600 group-hover:text-gray-900'">Contact</span>
-        </button>
+        </a>
       </div>
     </footer>
     <!-- header -->
