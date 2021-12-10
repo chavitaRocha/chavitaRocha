@@ -11,31 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <script type="module" crossorigin src="/chavitaRocha/assets/index.42fe4937.js"></script>
-    <link rel="stylesheet" href="/chavitaRocha/assets/index.58d73fa1.css">
+    <link rel="stylesheet" href="/chavitaRocha/assets/index.eff2b17b.css">
   </head>
-  <body>
+  <body class="dark:bg-slate-800">
     <!-- header -->
-    <header class="header header--main sticky bg-white/90 backdrop-blur-xl top-0 z-20">
+    <header class="header header--main sticky bg-white/90 backdrop-blur-xl top-0 z-20 dark:bg-slate-800/90">
       <div class="container container--header">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <a class="flex title-font font-medium items-center text-gray-900">
           <!-- <img src="./favicon.svg" class="w-7 h-auto" alt="Chavita" srcset="" /> -->
-          <span class="ml-3 text-xl flex rounded px-3 py-2 text-gray-600">Chavita<span class="text-primary opacity-80">.Dev</span></span>
+          <span class="ml-3 text-xl flex rounded text-gray-600 dark:text-gray-200">Chavita<span class="text-primary opacity-80 dark:opacity-100">.Dev</span></span>
         </a>
-        <nav class="hidden md:ml-auto md:flex flex-wrap items-center text-base justify-center">
+        <nav class="hidden md:ml-auto md:flex flex-wrap items-center text-base justify-center dark:text-gray-300">
           <a href="#about" class="mr-5 hover:text-gray-900">About me</a>
           <a href="#experience" class="mr-5 hover:text-gray-900">Experience</a>
           <a href="#contact" class="mr-5 hover:text-gray-900">Contact</a>
         </nav>
       </div>
     </header>
-    <main class="main mb-36">
+    <main class="main mb-36 dark:bg-slate-800">
       <section class="text-gray-600 hero scroll-mt-16" id="about">
         <div class="container container--hero">
           <div class="lg:max-w-3xl lg:mx-auto flex items-center flex-col">
             <img src="/chavitaRocha/assets/profile.cb991ee6.png" alt="Chavita" srcset="" class="w-[200px] h-[200px] border-4 border-primary shadow-lg p-1 object-cover object-top mx-auto rounded-full" />
-            <h1 class="title-font sm:text-4xl text-3xl mb-3 mt-2 text-center font-medium text-gray-700"><span class="text-xl text-gray-400 font-light">I'm </span>Salvador Rocha</h1>
+            <h1 class="title-font sm:text-4xl text-3xl mb-3 mt-2 text-center font-medium text-gray-700 dark:text-gray-300"><span class="text-xl text-gray-400 font-light">I'm </span>Salvador Rocha</h1>
             <h3 class="text-md text-primary opacity-90 text-center mb-8">Front End Developer</h3>
-            <p class="mb-8 leading-relaxed text-center text-gray-500">
+            <p class="mb-8 leading-relaxed text-center text-gray-500 dark:text-gray-300">
               Senior Developer, experienced with all stages of the development cycle for dynamic web and desktop projects. Working with numerous programming languages like Javascript, C#, Go, Java as well as the Frameworks like React, Angular, Vue.
             </p>
             <button class="mx-auto inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-opacity-90 rounded text-lg">Download resume</button>
@@ -44,12 +44,12 @@
       </section>
       <section class="text-gray-600 body-font scroll-mt-14 lg:scroll-mb-28 z-0" id="experience">
         <div class="container px-5 pb-16 pt-0 mx-auto flex flex-wrap lg:max-w-screen-xl">
-          <h1 class="text-3xl my-10">Experience</h1>
+          <h1 class="text-3xl my-10 dark:text-gray-400">Experience</h1>
           <div class="flex flex-wrap w-full">
             <div class="md:pr-10 md:py-6">
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-gray-200 dark:bg-slate-400 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary inline-flex items-center justify-center text-white relative z-0">
                   <svg viewBox="0 0 128 128" class="w-6 h-6 z-0">
@@ -61,20 +61,20 @@
                     </g>
                   </svg>
                 </div>
-                <div class="lg:flex lg:justify-start flex-grow pl-4">
+                <div class="experience-card">
                   <div class="lg:w-1/4">
-                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Frontend React / React Native</h2>
-                    <h3 class="text-sm text-gray-500 font-thin mb-1">SmartThinking</h3>
-                    <h3 class="text-xs text-gray-400 font-thin mb-1">Sep 2020 - Currently</h3>
+                    <h2 class="experience-card__job">Frontend React / React Native</h2>
+                    <h3 class="experience-card__place">SmartThinking</h3>
+                    <h3 class="experience-card__date">Sep 2020 - Currently</h3>
                   </div>
                   <div class="lg:w-3/4">
-                    <p class="leading-relaxed lg:bg-gray-100 lg:p-4 lg:rounded">Refactor Home City Ice Mobile App moving from Expo to CLI, implemented Stripe payments with Credit/Debit Card and ACH Charges.</p>
+                    <p class="experience-card__summary">Refactor Home City Ice Mobile App moving from Expo to CLI, implemented Stripe payments with Credit/Debit Card and ACH Charges.</p>
                   </div>
                 </div>
               </div>
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-gray-200 dark:bg-slate-400 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary inline-flex items-center justify-center text-white relative z-10">
                   <svg viewBox="0 0 128 128" class="w-8 h-10" fill="#fff">
@@ -83,20 +83,20 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="flex-grow pl-4 lg:flex">
+                <div class="experience-card">
                   <div class="lg:w-1/4">
-                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Frontend React (NextJs)</h2>
-                    <h3 class="text-sm text-gray-500 font-thin mb-1">SearchRebel</h3>
-                    <h3 class="text-xs text-gray-400 font-thin mb-1">Apr 2019 - Aug 2020</h3>
+                    <h2 class="experience-card__job">Frontend React (NextJs)</h2>
+                    <h3 class="experience-card__place">SearchRebel</h3>
+                    <h3 class="experience-card__date">Apr 2019 - Aug 2020</h3>
                   </div>
                   <div class="lg:w-3/4">
-                    <p class="leading-relaxed lg:bg-gray-100 lg:p-4 lg:rounded">Create React Components for a No-Code platform developed with NextJS, Neo4j and Spring. Components like recursive menus, trees, buttons, forms and so on, all of them customizable via JSON file.</p>
+                    <p class="experience-card__summary">Create React Components for a No-Code platform developed with NextJS, Neo4j and Spring. Components like recursive menus, trees, buttons, forms and so on, all of them customizable via JSON file.</p>
                   </div>
                 </div>
               </div>
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-gray-200 dark:bg-slate-400 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary inline-flex items-center justify-center text-white relative z-10">
                   <svg viewBox="0 0 128 128" class="w-8">
@@ -108,14 +108,14 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="flex-grow pl-4 lg:flex">
+                <div class="experience-card">
                   <div class="lg:w-1/4">
-                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Backend .NET</h2>
-                    <h3 class="text-sm text-gray-500 font-thin mb-1">Freelance - Nissan Company</h3>
-                    <h3 class="text-xs text-gray-400 font-thin mb-1">Oct 2018 - Dec 2018</h3>
+                    <h2 class="experience-card__job">Backend .NET</h2>
+                    <h3 class="experience-card__place">Freelance - Nissan Company</h3>
+                    <h3 class="experience-card__date">Oct 2018 - Dec 2018</h3>
                   </div>
                   <div class="lg:w-3/4">
-                    <p class="leading-relaxed lg:bg-gray-100 lg:p-4 lg:rounded">
+                    <p class="experience-card__summary">
                       Refactor Client-Server application (.NET C#, SQL Server) to validates the torque wrench in the Car's motor for American Standards. Create the connection between the application and the Nissan's system to fetch and save the data from the assembly line. Create Sockets and Threads
                       to connect the wireless wrench and get the torque to validate.
                     </p>
@@ -124,7 +124,7 @@
               </div>
               <div class="flex relative pb-12">
                 <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                  <div class="h-full w-1 bg-gray-200 dark:bg-slate-400 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary inline-flex items-center justify-center text-white relative z-10">
                   <svg viewBox="0 0 128 128" class="w-8">
@@ -136,14 +136,14 @@
                     ></path>
                   </svg>
                 </div>
-                <div class="flex-grow pl-4 lg:flex">
+                <div class="experience-card">
                   <div class="lg:w-1/4">
-                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Fullstack .NET and PHP</h2>
-                    <h3 class="text-sm text-gray-500 font-thin mb-1">CRISA / Linea Italia</h3>
-                    <h3 class="text-xs text-gray-400 font-thin mb-1">Nov 2016 - Jul 2018</h3>
+                    <h2 class="experience-card__job">Fullstack .NET and PHP</h2>
+                    <h3 class="experience-card__place">CRISA / Linea Italia</h3>
+                    <h3 class="experience-card__date">Nov 2016 - Jul 2018</h3>
                   </div>
                   <div class="lg:w-3/4">
-                    <p class="leading-relaxed lg:bg-gray-100 lg:p-4 lg:rounded">
+                    <p class="experience-card__summary">
                       Created Web apps with C# .NET, Vue, React and SQL Server, like invoice, order management. Development the service communication between Microsoft Dynamics and Prestashop, configuration and administration server with PHP7, MariaDB, Apache on CentOS in Digital Ocean to host the
                       e-commerce for the company.
                     </p>
@@ -157,14 +157,14 @@
                     <path d="M22 4L12 14.01l-3-3"></path>
                   </svg>
                 </div>
-                <div class="flex-grow pl-4 lg:flex">
+                <div class="experience-card">
                   <div class="lg:w-1/4">
-                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">Lead Development Department</h2>
-                    <h3 class="text-sm text-gray-500 font-thin mb-1">Aguascalientes City Hall</h3>
-                    <h3 class="text-xs text-gray-400 font-thin mb-1">Jan 2013 - Dec 2014</h3>
+                    <h2 class="experience-card__job">Lead Development Department</h2>
+                    <h3 class="experience-card__place">Aguascalientes City Hall</h3>
+                    <h3 class="experience-card__date">Jan 2013 - Dec 2014</h3>
                   </div>
                   <div class="lg:w-3/4">
-                    <p class="leading-relaxed lg:bg-gray-100 lg:p-4 lg:rounded">
+                    <p class="experience-card__summary">
                       Lead development department with 20 members, changed around 13 desktop applications from VB6 to .NET (3.5) to solve efficiency and issues. Created the City Hall website from scratch twice and created website for each dependency in the City Hall.
                     </p>
                   </div>
@@ -177,29 +177,20 @@
       </section>
     </main>
     <footer>
-      <div class="group fixed w-full bottom-0 left-[50%] translate-x-[-50%] p-1 rounded-lg flex justify-around bg-gray-50 drop-shadow-2xl hover:bg-gray-200 z-10 md:hidden">
-        <a href="#about" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium">
+      <div class="group fixed w-full bottom-0 left-[50%] translate-x-[-50%] md:p-1 pb-5 rounded-lg flex justify-around bg-gray-50 drop-shadow-2xl z-10 md:hidden dark:bg-slate-900 text-gray-700 dark:text-gray-400">
+        <a href="#about" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm  font-medium">
           <span x-show="true" class="p-3 rounded-md flex items-center text-sm font-medium">
-            <i class="fas fa-user mr-2 text-primary"></i>
-            <span class="sr-only not-sr-only text-gray-900">About me</span>
+            <i class="fas fa-user mr-2"></i>
+            <span class="sr-only not-sr-only">About me</span>
           </span>
         </a>
-        <a
-          href="#experience"
-          class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
-          :class="activeTab === 'code' ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5' : ''"
-          @click="activeTab = 'code'"
-          tabindex="-1"
-          :tabindex="activeTab === 'code' ? '0' : '-1'"
-          @keydown.arrow-left="activeTab = 'preview'"
-          @keydown.arrow-right="activeTab = 'preview'"
-        >
+        <a href="#experience" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm  font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100">
           <i class="fas fa-folder mr-2"></i>
-          <span class="sr-only not-sr-only text-gray-600 group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : 'text-gray-600 group-hover:text-gray-900'">Experience</span>
+          <span class="sr-only not-sr-only  group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : ' group-hover:text-gray-900'">Experience</span>
         </a>
         <a
           href="#contact"
-          class="ml-0.5 p-1.5 mr-3 min-w-fit lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm text-gray-600 font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
+          class="ml-0.5 p-1.5 mr-3 min-w-fit lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm  font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
           :class="activeTab === 'code' ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5' : ''"
           @click="activeTab = 'code'"
           tabindex="-1"
@@ -208,7 +199,7 @@
           @keydown.arrow-right="activeTab = 'preview'"
         >
           <i class="fas fa-address-card mr-2"></i>
-          <span class="sr-only not-sr-only text-gray-600 group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : 'text-gray-600 group-hover:text-gray-900'">Contact</span>
+          <span class="sr-only not-sr-only  group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : ' group-hover:text-gray-900'">Contact</span>
         </a>
       </div>
     </footer>
