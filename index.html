@@ -36,12 +36,12 @@
             <p class="mb-8 leading-relaxed text-center text-gray-500 dark:text-gray-300">
               Senior Developer, experienced with all stages of the development cycle for dynamic web and desktop projects. Working with numerous programming languages like Javascript, C#, Go, Java as well as the Frameworks like React, Angular, Vue.
             </p>
-            <button class="mx-auto inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-opacity-90 rounded text-lg">Download resume</button>
+            <a href="./assets/docs/resume_0.1.0.pdf" target="_blank" class="mx-auto inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-opacity-90 rounded text-lg">Download resume</a>
           </div>
         </div>
       </section>
       <section class="text-gray-600 body-font scroll-mt-14 lg:scroll-mb-28 z-0" id="experience">
-        <div class="container px-5 pb-16 pt-0 mx-auto flex flex-wrap lg:max-w-screen-xl">
+        <div class="container px-5 pb-16 pt-0 mx-auto flex flex-wrap lg:max-w-screen-lg">
           <h1 class="text-3xl my-10 dark:text-gray-400">Experience</h1>
           <div class="flex flex-wrap w-full">
             <div class="md:pr-10 md:py-6">
@@ -66,7 +66,12 @@
                     <h3 class="experience-card__date">Sep 2020 - Currently</h3>
                   </div>
                   <div class="lg:w-3/4">
-                    <p class="experience-card__summary">Refactor Home City Ice Mobile App moving from Expo to CLI, implemented Stripe payments with Credit/Debit Card and ACH Charges.</p>
+                    <p class="experience-card__summary">
+                      Refactor Home City Ice Mobile App moving from Expo to React Native CLI, implemented Stripe payments with Credit/Debit Card and ACH Charges.<br />
+                      Migrate Home City Ice Internal Mobile App from React Native 0.60 to the latest version (0.64) removing all the expo library dependencies, implemented and integrated redux toolkit library with redux-saga to reduce the redux's files and code.
+                      <br />
+                      Created a Web Education Platform to connect tutors with parents, creating an API Rest with NodeJs (express), in the frontend React with firebase to implement a realtime chat and deploy it on a Heroku dyno.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -176,19 +181,19 @@
     </main>
     <footer>
       <div class="group fixed w-full bottom-0 left-[50%] translate-x-[-50%] md:p-1 pb-5 rounded-lg flex justify-around bg-gray-50 drop-shadow-2xl z-10 md:hidden dark:bg-slate-900 text-gray-700 dark:text-gray-400">
-        <a href="#about" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm  font-medium">
+        <a href="#about" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm font-medium">
           <span x-show="true" class="p-3 rounded-md flex items-center text-sm font-medium">
             <i class="fas fa-user mr-2"></i>
             <span class="sr-only not-sr-only">About me</span>
           </span>
         </a>
-        <a href="#experience" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm  font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100">
+        <a href="#experience" class="ml-0.5 min-w-fit p-1.5 lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100">
           <i class="fas fa-folder mr-2"></i>
-          <span class="sr-only not-sr-only  group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : ' group-hover:text-gray-900'">Experience</span>
+          <span class="sr-only not-sr-only">Experience</span>
         </a>
         <a
           href="#contact"
-          class="ml-0.5 p-1.5 mr-3 min-w-fit lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm  font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
+          class="ml-0.5 p-1.5 mr-3 min-w-fit lg:pl-2.5 lg:pr-3.5 rounded-md flex items-center text-sm font-medium focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus:outline-none focus-visible:ring-offset-gray-100"
           :class="activeTab === 'code' ? 'bg-white shadow-sm ring-1 ring-black ring-opacity-5' : ''"
           @click="activeTab = 'code'"
           tabindex="-1"
@@ -197,7 +202,7 @@
           @keydown.arrow-right="activeTab = 'preview'"
         >
           <i class="fas fa-address-card mr-2"></i>
-          <span class="sr-only not-sr-only  group-hover:text-gray-900" :class="activeTab === 'code' ? 'text-gray-900' : ' group-hover:text-gray-900'">Contact</span>
+          <span class="sr-only not-sr-only">Contact</span>
         </a>
       </div>
     </footer>
