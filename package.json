@@ -1,6 +1,7 @@
 {
   "name": "chavita-rocha",
   "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "start": "vite",
     "dev": "vite",
