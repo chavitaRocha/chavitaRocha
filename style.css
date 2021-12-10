@@ -7,3 +7,15 @@
     font-family: "Roboto Mono", monospace;
   }
 }
+
+@layer components { 
+  .header {
+    @apply text-gray-600;
+  }
+  .container--header {
+    @apply mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center;
+  }
+  .container--hero {
+    @apply mx-auto flex px-5 pt-10 pb-5 md:py-20 md:flex-row flex-col items-center;
+  }
+}
