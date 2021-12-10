@@ -13,9 +13,30 @@
     @apply text-gray-600;
   }
   .container--header {
-    @apply mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center;
+    @apply mx-auto flex flex-wrap py-7 flex-col md:flex-row items-center;
   }
   .container--hero {
     @apply mx-auto flex px-5 pt-10 pb-5 md:py-20 md:flex-row flex-col items-center;
   }
+
+  .experience-card {
+    @apply lg:flex lg:justify-start flex-grow pl-4;
+  }
+
+  .experience-card__job {
+    @apply font-medium text-sm text-gray-900 mb-1 tracking-wider dark:text-gray-200;
+  }
+
+  .experience-card__place {
+    @apply text-sm text-gray-500 dark:text-gray-400 font-thin mb-1;
+  }
+
+  .experience-card__date {
+    @apply text-xs text-gray-400 font-thin mb-1;
+  }
+
+  .experience-card__summary {
+    @apply leading-relaxed lg:bg-gray-100 lg:p-4 lg:rounded dark:text-slate-300 mt-4 lg:mt-0 dark:lg:bg-slate-900;
+  }
+
 }
